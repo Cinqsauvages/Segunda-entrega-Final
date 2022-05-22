@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+
+}
+/*animacion de presentancion*/
+
+.contenedorUno {
+    background-image:linear-gradient(to top,cadetblue,white);
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "imgprincipal imgprincipal"
+        "texto texto "
+        "pie pie";
+    gap: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*ENCABEZADO*/
+.head {
+    grid-area: titulo;
+    color: #F08080;
+    font-size: 25px;
+    justify-items: start;
+    animation-name: un_efecto;
+}
+
+.head h1 {
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+
+}
+
+.logo img {
+    height: 80%;
+}
+
+/*--------------------*/
+.imgPrincipal {
+    grid-area: imgprincipal;
+
+}
+
+.imgPrincipal img {
+    width: 85%;
+}
+
+/*MENU*/
+.list {
+    grid-area: lista;
+    border: 1px black solid;
+    background-color: cadetblue;
+    border-radius: 50px;
+}
+
+.listUl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hijoFlex {
+    border: 1px black solid;
+    padding: 3px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/*----------------------------------*/
+
+
+.principal {
+    grid-area: texto;
+}
+
+p {
+    color: #a45656;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.principal h2 {
+    font-size: 2rem;
+    color: #a45656;
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer {
+    border-top: 2px black solid;
+    grid-area: pie;
+    font-size: 1rem;
+    color: #a45656;
+    text-align: end;
+    font-weight: bold;
+}
+
+/* pagina de estudios*/
+.contenedorDos {
+    background-image:linear-gradient(to top,cadetblue,white);
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "tratamientos tratamientos"
+        "videos videos"
+        "pie pie";
+    gap: 3px;
+}
+
+.principalDos {
+    grid-area: tratamientos;
+    font-size: 2rem;
+    color: #a45656;
+}
+
+.imagenesVideo {
+    grid-area: videos;
+    border: 2px solid black;
+}
+
+.tratamientoUno {
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: cadetblue;
+
+}
+
+.tratamientoDos {
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+
+.tratamientoTres {
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+
+legend {
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.contenidoVideo {
+    display: inline-flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.contenidoVideo {
+    width: 70%;
+    height: 380px;
+}
+
+.imagenesT {
+    width: 45%;
+}
+
+.videoT {
+    width: 30%;
+}
+
+/*Pagina de quienes somos*/
+.contenedorTres {
+    background-image:linear-gradient(to top,cadetblue,white);
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "pr pr"
+        "obj obj"
+        "pie pie";
+
+}
+
+.presentacion {
+    grid-area: pr;
+    display: flex;
+    justify-content: space-around;
+}
+
+.objetivos {
+    grid-area: obj;
+}
+
+.roxana {
+    border: 5px solid black;
+
+
+}
+
+.tamara {
+    border: 5px solid black;
+}
+.textoPr{
+    height: 500px;
+    width: auto;
+    overflow: auto;
+}
+
+/*Pagina de indicaciones*/
+.contenedorCuatro {
+    background-image:linear-gradient(to top,cadetblue,white);
+    display: grid;
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "indica indica"
+        "producto producto"
+        "cata cata"
+        "pie pie";
+}
+
+.indicaciones {
+    grid-area: indica;
+}
+
+.productos {
+    grid-area: producto;
+}
+
+.productos h3 {
+    background-color: cadetblue;
+    border: 2px solid black;
+}
+
+.seleccionProductos {
+    border: black solid 2px;
+}
+
+.catalogo {
+    grid-area: cata;
+    margin: 0;
+
+}
+
+.pr {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    overflow: scroll;
+    margin: 0;
+   
+}
+.pr img{
+    width: 250px;
+    height: 250px;
+}
+.boton{
+    width:auto;
+    height: 30px;
+    font-weight: bold;
+    margin-bottom:5px;
+
+}
+
+/*pagina de contacto*/
+.contenedorCinco {
+    background-image:linear-gradient(to top,cadetblue,white);
+    display: grid;
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "formu ubica"
+        "formu ubica"
+        "redes redes"
+        "pie pie";
+    gap: 3px;
+
+}
+
+.formulario {
+    grid-area: formu;
+    border: 2px solid black;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+#nombre {
+    height: 25px;
+    border: 2px solid black;
+}
+
+#numero {
+    height: 25px;
+    border: 2px solid black;
+}
+
+#email {
+    height: 25px;
+    border: 2px solid black;
+}
+
+#tratamiento {
+    height: 30px;
+    border: 2px solid black;
+}
+
+.ubicacion {
+    grid-area: ubica;
+    border: 2px solid black;
+}
+
+.redes {
+    grid-area: redes;
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+
+@media screen and (max-width:400px) {
+    .contenedorUno {
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "lista lista "
+            "texto texto "
+            "pie pie";
+
+    }
+    .presentacion{
+        display: inline;
+    }
+
+    .contenedorDos {
+        display: grid;
+        grid-area:
+            "logo logo"
+            "lista lista"
+            "tratamiento tratamiento"
+            "video video"
+            "pie pie";
+    }
+
+    .contenedorTres {
+        display: grid;
+        grid-area:
+            "logo logo"
+            "lista lista"
+            "pr pr"
+            "obj obj"
+            "pie pie";
+    }
+
+    .logo {
+        text-align: center;
+        width: 380px;
+    }
+
+    .principal p {
+        font-size: 1.1rem;
+    }
+
+    .imgPrincipal {
+        display: none;
+    }
+
+    .head {
+        display: none;
+    }
+
+    .listUl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    legend p {
+        font-size: 1.1rem;
+    }
+
+    .principalDos {
+        width: 90%;
+    }
+
+    .list {
+        width: 90%;
+        margin-left: 15px;
+
+    }
+
+    .presentacion {
+        width: 90%;
+    }
+
+    .tratamientoUno,
+    .tratamientoDos,
+    .tratamientoTres {
+        margin-left: 15px;
+    }
+
+    .presentacion {
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .contenedorCuatro {
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "lista lista"
+            "pr pr"
+            "idica indica"
+            "pr pr"
+            "pie pie";
+    }
+
+    .contenedorCinco {
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "lista lista"
+            "formu formu"
+            "redes redes"
+            "pie pie";
+
+    }
+
+    .ubicacion {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:780px) {
+    .contenedorCinco {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logo titulo"
+            "lista lista"
+            "formu formu"
+            "ubica ubica"
+            "redes redes"
+            "pie pie"
+    }
+}
